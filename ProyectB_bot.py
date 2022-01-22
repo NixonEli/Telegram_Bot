@@ -2038,7 +2038,8 @@ def pruebas (update, context):
     print(update)
 
 if __name__ == "__main__":
-    updater =  Updater(token="1799006862:AAEkWmKGyDBCSBRu12afHJq0KbU313BJr9g", use_context=True)
+    token = os.environ['TOKEN']
+    updater =  Updater(token=token, use_context=True)
     dp = updater.dispatcher
 
     #pip install python-telegram-bot -U (Para actualizar la libreria)
